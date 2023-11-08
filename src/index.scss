@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Caveat', cursive;
+}
+
+:root {
+  --l-m-background: white;
+  --l-m-img: url("./assets/bg-desktop-light.jpg");
+  --l-m-text: black;
+  --l-m-element: white;
+  --l-m-border: hsl(236, 33%, 92%);
+  --d-m-background: #1d1e2b;
+  --d-m-img: url("./assets/bg-desktop-dark.jpg");
+  --d-m-text: white;
+  --d-m-element: #312e4b;
+  --d-m-border: #4c4c5b;
+}

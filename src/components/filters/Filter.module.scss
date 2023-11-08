@@ -1,0 +1,30 @@
+@import "../../index";
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: hsl(236, 9%, 61%);
+  background-color: var(--l-m-element);
+  border-radius: 0 0 5px 5px;
+  border: 1px solid;
+  border-color: var(--l-m-border);
+  border-top: none;
+  min-height: 50px;
+}
+
+.filters{
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+}
+
+.footer span:hover{
+  cursor: pointer;
+  color: var(--l-m-text);
+}
+
+.active{
+  color: hsl(234, 61%, 51%);
+}

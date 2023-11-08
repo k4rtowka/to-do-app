@@ -1,0 +1,45 @@
+@import "../../index";
+
+
+.form{
+  background-color: var(--l-m-element);
+  margin-top: 40px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid var(--l-m-element);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+input{
+  background-color: var(--l-m-element);
+  color: var(--l-m-text);
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  width: 460px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+button{
+  color: var(--l-m-element);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: var(--l-m-element);
+  border: 0.5px solid hsl(0, 0%, 60%);
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button:active{
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+

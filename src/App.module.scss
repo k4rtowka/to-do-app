@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Open+Sans:wght@600&family=Overpass+Mono&family=Source+Code+Pro:wght@300;500&family=Ubuntu:wght@400;700&display=swap');
+@import "index";
+
+.App {
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--l-m-background);
+  background-image: var(--l-m-img);
+  color: var(--l-m-text);
+}
+
+.dark{
+  --l-m-background: var(--d-m-background);
+  --l-m-text: var(--d-m-text);
+  --l-m-img: var(--d-m-img);
+  --l-m-element: var(--d-m-element);
+  --l-m-border: var(--d-m-border);
+}
+
+
+.content{
+  margin-top: 50px;
+  width: 540px;
+  min-height: 600px;
+}
+
+.headers{
+  font-size: 24px;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headers > h1{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+
+.headers > img{
+  cursor: pointer;
+}
+
+
+.list{
+  background-color: var(--l-m-element);
+  margin-top: 40px;
+  min-height: 300px;
+  padding-top: 5px;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid;
+  border-color: var(--l-m-border);
+  border-bottom: none;
+  text-align: center;
+}
+
+.no__task{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 26px;
+}

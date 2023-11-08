@@ -1,0 +1,50 @@
+@import "../../index";
+
+
+.task{
+  background-color: var(--l-m-element);
+  height: 55px;
+  border-bottom: 0.5px solid var(--l-m-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.button{
+  color: var(--l-m-element);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: var(--l-m-element);
+  border: 0.5px solid darkgray;
+}
+
+
+.check{
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  border: 0.5px solid darkgray;
+}
+
+
+.text{
+  display: flex;
+  align-items: center;
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  width: 430px;
+  height: 40px;
+}
+
+.complete{
+  text-decoration: line-through;
+  color: hsl(233, 11%, 84%);
+}
+
+.img:hover{
+  cursor: pointer;
+}
