@@ -1,11 +1,11 @@
 import style from "./Task.module.scss";
-import React, {useState} from "react";
+import React from "react";
 import del from '../../assets/icon-cross.svg';
 
 interface TaskProps {
-  removeTask: void;
+  removeTask: (task: {id: number, text: string, isComplete: boolean}) => void;
   task: {id: number, text: string, isComplete: boolean};
-  completeTask: void;
+  completeTask: (task: {id: number, text: string, isComplete: boolean}) => void;
 }
 const Task = ({task, removeTask, completeTask}:TaskProps) => {
 

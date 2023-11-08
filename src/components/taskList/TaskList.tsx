@@ -3,8 +3,8 @@ import Task from "../task/Task.tsx";
 
 interface TaskListProps{
   tasks: { id: number; text: string; isComplete: boolean}[];
-  removeTask: void;
-  completeTask: void;
+  removeTask: (task: {id: number, text: string, isComplete: boolean}) => void;
+  completeTask: (task: {id: number, text: string, isComplete: boolean}) => void;
 }
 
 const TaskList = ({tasks, removeTask, completeTask}:TaskListProps) => {

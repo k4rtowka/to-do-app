@@ -2,8 +2,8 @@ import style from "./Filter.module.scss";
 
 interface tasksProps{
   tasks: { id: number; text: string; isComplete: boolean}[];
-  setTasks: void;
-  setFilter: void;
+  setTasks: (tasks: {id: number, text: string, isComplete: boolean}[]) => void;
+  setFilter: (filter: string) => void;
   filter: string;
 }
 const Filter = ({tasks, setTasks, filter, setFilter}:tasksProps) => {

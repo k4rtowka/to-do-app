@@ -18,8 +18,6 @@ function App() {
   const [filter, setFilter] = useState('All');
   const [sortedTasks, setSortedTasks] = useState([
     {id: 3, text: "Task 3", isComplete: false},
-    {id: 2, text: "Task 2", isComplete: false},
-    {id: 1, text: "Task 1", isComplete: false}
   ]);
   const [theme, setTheme] = useState(dark);
 
@@ -31,7 +29,7 @@ function App() {
     }else setSortedTasks(tasks);
     console.log('Sorted: ')
     console.log(sortedTasks);
-  }, [tasks, filter]);
+  }, [tasks, filter, sortedTasks]);
 
   const completedTask = (task: { id: number; text: string; isComplete: boolean}) => {
     const idCompete = tasks.indexOf(task);

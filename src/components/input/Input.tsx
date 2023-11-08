@@ -2,7 +2,7 @@ import style from "./Input.module.scss";
 import React, {useState} from "react";
 
 interface InputProps{
-  addTask: void;
+  addTask: (task: {id: number, text: string, isComplete: boolean}) => void;
 }
 const Input = ({addTask}:InputProps) => {
   const [task, setTask] = useState({ id: 0, text: ''});
